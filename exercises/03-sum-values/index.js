@@ -1,8 +1,9 @@
-window.calculateSumListener = function calculateSumListener()
+window.calculateSumListener = function calculateSumListener() {
 	//Return the value of the input #firstNumber
-	var stringA = document.getElementById("firstNumber").value;
+	let stringA = document.getElementById("firstNumber").value;
 	//Return the value of the input #secondNumber
-	var stringB = document.getElementById("secondNumber").value;
-
+	let stringB = document.getElementById("secondNumber").value;
+	let sum = parseInt(stringA) + parseInt(stringB);
 	//your code goes here
+	document.getElementById("resultNumber").value = sum;
 };
